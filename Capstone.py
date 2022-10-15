@@ -195,7 +195,7 @@ st.write("Setelah kita mengetahui bahwa kondisi E-Government membukakan harapan 
 # In[4]:
 
 
-fig5 = px.scatter(df3, title="Hubungan antara E-Participation, EGDI, dan CPI", x="E-Participation", y="EGDI", color="CPI", animation_frame="Tahun", hover_name='Negara', size_max=20)
+fig5 = px.scatter(df3, title="Bagaimana Partisipasi Publik Terhadap Sistem Elektronik Berperan?", y="EGDI", color="CPI", animation_frame="Tahun", hover_name='Negara', size_max=20)
 fig5.update_traces(marker={'size': 20})
 st.plotly_chart(fig5)
 
@@ -223,7 +223,7 @@ st.write("Berdasarkan grafik diatas dapat dilihat bahwa saat ini penduduk di sua
 
 
 df5=pd.read_excel('Internet Broadband.xlsx')
-fig6 = px.scatter(df5, title="Hubungan antara Active mobile-broadband subscriptions per 100 inhabitants, EGDI, dan CPI", x="Active mobile-broadband subscriptions per 100 inhabitants", y="EGDI", color="CPI", animation_frame="Tahun", range_x=[0,160], range_y=[0,1], hover_name='Negara', size_max=20)
+fig6 = px.scatter(df5, title="Bagaimana Penetrasi Mobile-Broadband Berperan?", x="Active mobile-broadband subscriptions per 100 inhabitants", y="EGDI", color="CPI", animation_frame="Tahun", range_x=[0,160], range_y=[0,1], hover_name='Negara', size_max=20)
 fig6.update_traces(marker={'size': 20})
 st.plotly_chart(fig6)
 
@@ -248,7 +248,7 @@ st.write("Sama seperti indeks E-Participation, jumlah langganan mobile-broadband
 # In[54]:
 
 
-fig7 = px.scatter(df3, title="Hubungan antara Government Effectiveness, EGDI, dengan CPI", x="Government Effectiveness", y="EGDI", color="CPI", animation_frame="Tahun", hover_name='Negara', size_max=20)
+fig7 = px.scatter(df3, title="Bagaimana Efektivitas Pemerintah Berperan?", x="Government Effectiveness", y="EGDI", color="CPI", animation_frame="Tahun", hover_name='Negara', size_max=20)
 fig7.update_traces(marker={'size': 20})
 st.plotly_chart(fig7)
 
